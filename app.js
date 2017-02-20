@@ -3,7 +3,7 @@
 const http = require('http');
 const fs = require('fs');
 
-const server = http.createServer((req, res) => {
+http.createServer((req, res) => {
 
   res.writeHead(200, { 'Content-Type': 'text/html' });
   let html = fs.readFileSync(__dirname + '/index.htm');
